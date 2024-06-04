@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simplecontainer-deployment
+  namespace: simplecontainer
+  labels:
+    app: simplecontainer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simplecontainer
+  template:
+    metadata:
+      labels:
+        app: simplecontainer
+    spec:
+      containers:
+      - name: simplecontainer
+        image: {{ .Values.image }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

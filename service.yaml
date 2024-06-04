@@ -1,0 +1,14 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: simplecontainer
+  namespace: simplecontainer
+spec:
+  #type: ClusterIP, ExternalName, LoadBalancer, NodePort
+  ports:
+  - name: http
+    port: 80
+  #- name: https
+  #  port: 443
+  selector:
+    app: simplecontainer

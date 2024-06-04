@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleContainer", "SimpleContainer\SimpleContainer.csproj", "{50AF62A3-047A-494A-A2AC-A40092C0A20A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93A3CBBA-745E-47BD-A20D-B7A7F39837F1}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+		deploy.ps1 = deploy.ps1
+		deployment.yaml = deployment.yaml
+		ingress.yaml = ingress.yaml
+		kustomization.yaml = kustomization.yaml
+		namespace.yaml = namespace.yaml
+		service.yaml = service.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{7E68C47D-A892-4E5E-9F29-A1D7B0FF24C9}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\.helmignore = deployment\.helmignore
+		deployment\Chart.yaml = deployment\Chart.yaml
+		deployment\values.yaml = deployment\values.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{22BD3C2F-4A1B-43F7-BBF8-C6D770D7A748}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\templates\deployment.yaml = deployment\templates\deployment.yaml
+		deployment\templates\ingress.yaml = deployment\templates\ingress.yaml
+		namespace.yaml = namespace.yaml
+		deployment\templates\service.yaml = deployment\templates\service.yaml
+		deployment\templates\_helpers.tpl = deployment\templates\_helpers.tpl
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "charts", "charts", "{41036624-1542-4937-8E27-7202728F3262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50AF62A3-047A-494A-A2AC-A40092C0A20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AF62A3-047A-494A-A2AC-A40092C0A20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AF62A3-047A-494A-A2AC-A40092C0A20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AF62A3-047A-494A-A2AC-A40092C0A20A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22BD3C2F-4A1B-43F7-BBF8-C6D770D7A748} = {7E68C47D-A892-4E5E-9F29-A1D7B0FF24C9}
+		{41036624-1542-4937-8E27-7202728F3262} = {7E68C47D-A892-4E5E-9F29-A1D7B0FF24C9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF3124E9-6CBA-4E8E-8A0D-BAF931A58714}
+	EndGlobalSection
+EndGlobal

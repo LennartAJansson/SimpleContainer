@@ -1,0 +1,2 @@
+image: "registry:5000/simplecontainer:latest"
+host:  "simplecontainer.ubk3s"  

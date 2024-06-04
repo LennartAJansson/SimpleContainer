@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: simplecontainer
+resources:
+- namespace.yaml
+- ingress.yaml
+- deployment.yaml
+- service.yaml
+images:
+- name: registry:5000/simplecontainer
+  newTag: 1.0.0.3

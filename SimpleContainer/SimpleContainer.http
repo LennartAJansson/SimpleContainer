@@ -1,0 +1,6 @@
+@SimpleContainer_HostAddress = http://localhost:5127
+
+GET {{SimpleContainer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
